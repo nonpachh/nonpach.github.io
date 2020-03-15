@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  background-size: cover;
+}
+
+body{
+  display: flex;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/78525104_10162553560175403_3566813452762611712_n.jpg?_nc_cat=101&_nc_sid=0be424&_nc_ohc=RuDzbddHbZgAX9nGfar&_nc_ht=scontent.fbkk22-1.fna&oh=8d87fb649a9197ea300e08c4903cd8b2&oe=5E948A51);
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 200px 100px 50px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+  
+.name {
+  grid-row: 2 / 3;
+  grid-column: 2 / 7;
+  font-size: 75px;
+  font-family: 'Lato', sans-serif;
+}
+
+.position {
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
+  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+}
+
+.company {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
